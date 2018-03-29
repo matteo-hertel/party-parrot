@@ -1,9 +1,9 @@
 {
-  "name": "party-parrot",
+  "name": "terminal-parrot",
   "version": "0.0.0",
   "bin": {
-    "party-parrot": "index.js",
-    "partyparrot": "index.js"
+    "terminal-parro": "index.js",
+    "terminalparrot": "index.js"
   },
   "description": "",
   "scripts": {

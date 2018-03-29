@@ -1,6 +1,6 @@
 {
-  "name": "parrot-live",
-  "version": "0.0.0-development",
+  "name": "party-parrot",
+  "version": "0.0.0",
   "bin": {
     "party-parrot": "index.js",
     "partyparrot": "index.js"

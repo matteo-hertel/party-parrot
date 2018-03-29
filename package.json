@@ -1,0 +1,29 @@
+{
+  "name": "parrot-live",
+  "version": "0.0.0",
+  "bin": {
+    "partyparrot": "index.js"
+  },
+  "description": "",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "ascii-animation": "^1.0.4",
+    "cli-frames": "^2.2.8",
+    "colors": "^1.2.1",
+    "couleurs": "^6.0.9",
+    "lodash": "^4.17.5",
+    "mz": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "author": {
+    "name": "Matteo Herte",
+    "email": "info@matteohertel.com",
+    "url": "https://blog.matteohertel.com"
+  },
+  "license": "MIT"
+}

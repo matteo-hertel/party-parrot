@@ -1,17 +1,19 @@
-# Party Parrot
+# Terminal Parrot
 
-npm module to party hard in your terminal! 
+I had to rename the package from `party-parrot` to `terminal-parrot` beacuse of the new npm name ¯\_(ツ)_/¯
+
+npm module to party hard in your terminal!
 
 # Try it!
 ```js
-npx party-parrot
+npx terminal-parrot
 ```
 
 or
 
 ```js
-npm i -g party-parrot
-party-parrot
+npm i -g terminal-parrot
+terminal-parrot
 ```
 # Prerequisites
 The module is using `async/await` so node >= 7.6 is needed
@@ -19,5 +21,5 @@ The module is using `async/await` so node >= 7.6 is needed
 ## Demo
 
 # Credits
-* got the idea form [https://github.com/hugomd/parrot.live](https://github.com/hugomd/parrot.live) 
-* ~stole~ borrowed the frames from [`terminal-parrot`](https://github.com/jmhobbs/terminal-parrot) 
+* got the idea form [https://github.com/hugomd/parrot.live](https://github.com/hugomd/parrot.live)
+* ~stole~ borrowed the frames from [`terminal-parrot`](https://github.com/jmhobbs/terminal-parrot)

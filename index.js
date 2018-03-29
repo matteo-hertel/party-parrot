@@ -3,19 +3,19 @@ const fs = require("fs");
 const { promisify } = require("util");
 
 const cliFrames = require("cli-frames");
-const colors = require("colors/safe");
+const colours = require("colors/safe");
 const _ = require("lodash");
 
 const readDirAsync = promisify(fs.readdir);
 const readFileAsync = promisify(fs.readFile);
-const colorsOptions = [
-  "red",
-  "yellow",
-  "green",
+const colourPool = [
   "blue",
-  "magenta",
   "cyan",
-  "white"
+  "green",
+  "magenta",
+  "red",
+  "white",
+  "yellow"
 ];
 
 letsParty();
@@ -39,7 +39,10 @@ async function getFrames() {
 
 async function processFrames(data) {
   const frames = await data.map(getFrame);
-  return await Promise.all(frames).then(coloriseArray);
+
+  return await Promise.all(frames)
+    .then(frames => frames.map(frame => frame.toString()))
+    .then(coloriseArray);
 }
 function getFrame(frame) {
   return Promise.resolve(readFileAsync(`./frames/${frame}`));
@@ -50,5 +53,7 @@ function coloriseArray(pool) {
 }
 
 function coloriseString(str) {
-  return colors[_.sample(colorsOptions)](str);
+  return colours[_.sample(colourPool)](str);
 }
+
+process.on("unhandledRejection", _.unary(console.log));

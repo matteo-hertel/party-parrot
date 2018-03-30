@@ -2,7 +2,7 @@
   "name": "terminal-parrot",
   "version": "0.0.0",
   "bin": {
-    "terminal-parro": "index.js",
+    "terminal-parrot": "index.js",
     "terminalparrot": "index.js"
   },
   "description": "",

@@ -45,7 +45,7 @@ async function processFrames(data) {
     .then(coloriseArray);
 }
 function getFrame(frame) {
-  return Promise.resolve(readFileAsync(`./frames/${frame}`));
+  return Promise.resolve(readFileAsync(`${__dirname}/frames/${frame}`));
 }
 
 function coloriseArray(pool) {

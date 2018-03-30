@@ -34,7 +34,7 @@ async function letsParty() {
 }
 
 async function getFrames() {
-  return readDirAsync("./frames").then(processFrames);
+  return readDirAsync(`${__dirname}/frames`).then(processFrames);
 }
 
 async function processFrames(data) {

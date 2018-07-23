@@ -19,6 +19,7 @@ terminal-parrot
 The module is using `async/await` so node >= 7.6 is needed
 
 ## Demo
+![terminal-parrot demo](https://i.imgur.com/VBTRez1.gif)
 
 # Credits
 * got the idea form [https://github.com/hugomd/parrot.live](https://github.com/hugomd/parrot.live)
